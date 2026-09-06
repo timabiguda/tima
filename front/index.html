@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="diagnos-choosing" id="diagnos-choosing">
+        <div class="diagnos-header">Выберите интересующий<br>диагноз</div>
+        <div class="diagnos-opts">
+            <button class="diagnos-ras" id="diagnos-ras">РАС</button>
+            <button class="diagnos-dcp" id="diagnos-dcp">ДЦП</button>
+        </div>
+    </div>
+
+    <div class="main-site">
+
+        <div class="top-side">
+            <div class="logo-piece"></div>
+            <div class="account-piece">
+                <div class="unauthed">
+                    <button class="auth-btn-top" id="auth-btn-top">Войти</button>
+                </div>
+                <div class="authed">
+                    <button class="authed-btn" id="authed-btn"><img src="imgs/pfp.svg" alt="pfp"></button>
+                </div>
+            </div>
+            <div class="authed-burger">
+                <button class="log-out-btn">Выйти</button>
+            </div>
+        </div>
+
+        <div class="left-side" id="left-side">
+            <div class="scroll-menu">
+                <div class="scroll-menu-pos">
+                    <button class="scroll-menu-1">СТАТЬИ</button>
+                    <button class="scroll-menu-2">ПОЛУЧЕНИЕ ИНВАЛИДНОСТИ</button>
+                    <button class="scroll-menu-3">о РАС</button>
+                    <button class="scroll-menu-4">о ДЦП</button>
+                    <button class="scroll-menu-5">ЛЬГОТЫ</button>
+                </div>
+                
+
+
+                <div class="scroll-menu-neg">
+                    <button class="scroll-menu-neg2">О НАС</button>
+                    <button class="scroll-menu-neg1">обр. связь <img src="" alt=""></button>
+                </div>
+                
+            </div>
+            <button class="arrow-left-side" id="arrow-left-side"></button>
+        </div>
+        
+        <div class="ar-plate" id="ar-plate">
+            <div class="auth-plate">
+                <button class="btn-close-ar-plate" id="btn-close-ar-plate">x</button>
+                <div class="ar-plate-text">Войдите в аккаунт</div>
+                <div class="r-plate-text">Зарегистрируйтесь</div>
+                <div class="ar-opts">
+                    <button class="ar-pgl">    <!--phone-gmail-login-->
+                        <img src="" alt="" class="pgl-icon"></img>
+                        <div class="pgl-text">Введите телефон/эл.почту/имя пользователя</div>
+                    </button>
+                    <button class="ar-google">
+                        <img src="" alt="" class="ar-gooogle-img">
+                        <div class="ar-google-text">Продолжить с&nbsp;<b>Google</b></div>
+                    </button>
+                    <button class="ar-apple">
+                        <img src="" alt="" class="ar-apple-img">
+                        <div class="ar-apple-text">Продолжить с&nbsp;<b>Apple</b></div>
+                    </button>
+                </div>
+                <div class="ar-btn">Нет акканута?&nbsp;
+                    <button class="reg-button-ar-plate" id="reg-button-ar-plate">Регистрация</button>
+                </div>
+                <div class="r-btn">Уже есть аккаунт?&nbsp;
+                    <button class="auth-button-ar-plate" id="auth-button-ar-plate">Войти</button>
+                </div>
+            </div>
+            <div class="pgl-auth">
+                <button class="back-button" id="pgl-auth-back-button"><</button>
+                <input type="text" placeholder="Телефон/email/логин:" class="pgl-auth-input">
+                <input type="password" placeholder="Введите пароль:" class="pgl-password-input">
+                <button class="logIN">Войти</button>
+            </div>
+            <div class="pgl-reg">
+                <button class="back-button" id="pgl-reg-back-button"><</button>
+                <span class="reg-login-text">Введите логин</span>
+                <input type="text" class="reg-login-input" placeholder="Логин">
+                
+                <span class="reg-password-text">Введите пароль</span>
+                <input type="password" class="reg-password1-input" placeholder="Пароль">
+                
+
+                <div class="reg-phone">
+                    <div class="reg-phone-header">
+                        <span class="reg-phone-text">Телефон</span>    
+                        <button class="reg-changeto-email">Зарегистрироваться через эл. почту</button>
+                    </div>
+                    <input type="number" class="reg-phone-input" placeholder="Номер телефона">                
+                    <div class="reg-verify-code">
+                        <input type="text" class="reg-code-input" placeholder="Введите 6-значный код">
+                        <button class="reg-send-code-phone">Отправить код</button>
+                    </div>
+                    <button class="reg-accept-btn" id="reg-accept-btn-phone">ok</button>
+                </div>
+
+                <div class="reg-email">
+                    <div class="reg-email-header">
+                        <span class="reg-gmai-text">Адрес эл. почты</span>    
+                        <button class="reg-changeto-phone">Зарегистрироваться через телефон</button>
+                    </div>
+                    <input type="email" class="reg-email-input" placeholder="Эл. почта">
+                    <div class="reg-verify-code">
+                        <input type="text" class="reg-code-input" placeholder="Введите 6-значный код">
+                        <button class="reg-send-code-email">Отправить код</button>
+                    </div>
+                    <button class="reg-accept-btn" id="reg-accept-btn-email">ok</button>
+                </div>
+
+
+            </div>
+<!-- // регистрация
+// ник
+// номер телефона
+// пароль
+// повторить пароль
+// дата рождения (необязательно) -->
+        </div>
+
+
+    </div>
+    
+    <script type="module" src="script.js"></script>
+</body>
+</html>
